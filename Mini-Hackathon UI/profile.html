@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Profile Card</title>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./profile.css">
+</head>
+<body>
+  <div class="spinner-container" id="spiner">
+    <div class="spinner"></div>
+  </div>
+  <div class="header">
+    <a >Personal Blog App</a>
+    <h2> My Profile </h2>
+  </div>
+
+  <div class="wrapper">
+    <div class="img-area">
+      <div class="inner-area">
+        <img src="./profile/image_mine.jpg" alt="">
+        <!-- <img src="./sitting-girl-with-laptop.png"> -->
+      </div>
+    </div>
+    
+    <div class="name">Name: <span id="userName"></span></div>
+    <div class="about">Email: <span id="userEmail"></span></div>
+
+    <!-- <div class="name">Name: </div>
+    <div class="about"> Email:</div> -->
+    
+    <div class="input-container">
+      <div class="form">
+        <input class="input" placeholder="Full Name" required id="fullName" type="text" >
+        <span class="input-border"></span>
+      </div>
+    </div>
+    <!-- <div class="input-container">
+      <div class="form">
+          <input class="input" placeholder="Email" required id="email" type="email" disabled>
+          <span class="input-border"></span>
+      </div>
+    </div> -->
+    <div class="input-container">
+      <div class="form">
+          <input class="input" placeholder="Password" required id="password" type="text" >
+          <span class="input-border"></span>
+      </div>
+   </div>
+    <!-- <div class="input-container">
+      <div class="form">
+          <input class="input"  style="visibility: hidden;"   required  id="uid" type="text" >
+          <span class="input-border"></span>
+      </div>
+    </div> -->
+
+    <div class="buttons">
+      <button id="updateBtn">Update</button>
+      <button id="Logout">Sign Out</button>
+    </div>
+  </div>
+  <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="../javascript/app.js"></script>
+</body>
+</html>
